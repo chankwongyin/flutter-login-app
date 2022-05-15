@@ -35,5 +35,11 @@ Password : 123456
 - KeyStore based solution is used in Android.
 - AES encryption is used for Android. AES secret key is encrypted with RSA and RSA key is stored in KeyStore
 
+## Sample Screens
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/login.png)
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/home.png)
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/after-login.png)
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
