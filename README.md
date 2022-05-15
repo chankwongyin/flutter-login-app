@@ -36,9 +36,12 @@ Password : 123456
 - AES encryption is used for Android. AES secret key is encrypted with RSA and RSA key is stored in KeyStore
 
 ## Sample Screens
-![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/login.png)
-![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/home.png)
-![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/after-login.png)
+
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/login.png?raw=true)
+
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/reset.png?raw=true) 
+
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/after-login.png?raw=true)
 
 
 ## License
