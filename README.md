@@ -5,9 +5,15 @@ A new Flutter project.
 ## Getting Started
 
 ```
+// Command
 flutter clean
 flutter pub get
+
+// Hardcoded Login user
+Username : testuser
+Password : 123456
 ```
+
 
 ## TODO
 - Include username, password, reset Password & Login UI component
