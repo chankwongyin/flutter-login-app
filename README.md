@@ -4,13 +4,30 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```
+flutter clean
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+## TODO
+- Include username, password, reset Password & Login UI component
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Request save password after first logon
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Reset password located in another screen and should auto login after reset
+
+- Add three banner images at the bottom of login page.
+
+- All data can be hard code in the app.
+
+## Permanent Storage
+### Hive
+- Lightweight and blazing fast key-value database written in pure Dart. Strongly encrypted using AES-256.
+  
+### flutter_secure_storage
+- Keychain is used for iOS
+- KeyStore based solution is used in Android.
+- AES encryption is used for Android. AES secret key is encrypted with RSA and RSA key is stored in KeyStore
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
