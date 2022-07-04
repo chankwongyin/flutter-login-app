@@ -31,6 +31,9 @@ dependencies:
   hive: ^2.1.0
   hive_flutter: ^1.1.0
 
+  #biometrics
+  local_auth: ^2.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

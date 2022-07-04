@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:hive/hive.dart';
+import 'package:local_auth/local_auth.dart';
+import 'package:loginapp/modules/biometrics/biometricsController.dart';
 import 'package:loginapp/others/contants.dart';
 import 'package:loginapp/ui/components/components.dart';
 
@@ -21,6 +24,7 @@ class _LoginPageState extends State<LoginPage> {
   String _password = "";
   late TextEditingController _usernameController;
   late TextEditingController _passwordController;
+  final _biometricsController = BiometricsController();
 
   @override
   void initState() {
@@ -248,8 +252,10 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  void _loginSucceed() {
-    Navigator.pushReplacementNamed(context, '/navigate');
+  Future<void> _loginSucceed() async {
+    if (await _biometricsController.authenticateWithBiometrics()) {
+      Navigator.pushReplacementNamed(context, '/navigate');
+    }
   }
 
   Future<void> _savePassword() async {
