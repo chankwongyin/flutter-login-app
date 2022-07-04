@@ -5,9 +5,15 @@ A new Flutter project.
 ## Getting Started
 
 ```
+// Command
 flutter clean
 flutter pub get
+
+// Hardcoded Login user
+Username : testuser
+Password : 123456
 ```
+
 
 ## TODO
 - Include username, password, reset Password & Login UI component
@@ -28,6 +34,15 @@ flutter pub get
 - Keychain is used for iOS
 - KeyStore based solution is used in Android.
 - AES encryption is used for Android. AES secret key is encrypted with RSA and RSA key is stored in KeyStore
+
+## Sample Screens
+
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/login.png?raw=true)
+
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/reset.png?raw=true) 
+
+![](https://github.com/chankwongyin/flutter-login-app/blob/master/images/after-login.png?raw=true)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
