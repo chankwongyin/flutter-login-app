@@ -4,4 +4,6 @@ class AppConstants {
 
   static const SECURE_STORAGE_KEY_USERNAME = "username";
   static const SECURE_STORAGE_KEY_PASSWORD = "password";
+
+  static const NEWS_API_URL = "add your own";
 }

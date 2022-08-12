@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/ui/pages/homePage.dart';
+import 'package:loginapp/ui/pages/newsPage.dart';
 import 'package:loginapp/ui/pages/settingsPage.dart';
 
 class NavigationPage extends StatefulWidget {
@@ -13,6 +14,7 @@ class _NavigationPageState extends State<NavigationPage> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
+    NewsPage(),
     SettingsPage(),
   ];
 
@@ -31,6 +33,8 @@ class _NavigationPageState extends State<NavigationPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.view_headline), label: "News"),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: "Settings"),
         ],
